@@ -9,9 +9,14 @@ namespace Decorator.Library.Decorator
         {
 
         }
-        public override void PrintUser()
+        public override void PrintRights()
         {
-            base.PrintUser();
+            base.PrintRights();
+            PrintAllRights();
+        }
+
+        public void PrintAllRights()
+        {
             Console.WriteLine("RETTIGHED: User has full access");
         }
     }

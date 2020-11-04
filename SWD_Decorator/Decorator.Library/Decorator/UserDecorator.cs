@@ -13,9 +13,9 @@ namespace Decorator.Library.Decorator
             _user = user;
         }
 
-        public virtual void PrintUser()
+        public virtual void PrintRights()
         {
-           _user.PrintUser();
+           _user.PrintRights();
         }
     }
 }

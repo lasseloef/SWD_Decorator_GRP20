@@ -4,7 +4,7 @@ namespace Decorator.Library.Component
 {
     public class Admin : IUser
     {
-        public void PrintUser()
+        public void PrintRights()
         {
             Console.WriteLine("User: Admin");
         }

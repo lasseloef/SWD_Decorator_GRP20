@@ -13,7 +13,7 @@ namespace SWD_Decorator
             UserDecorator BrugerA = new AntalDecorator(basicBruger);
             UserDecorator BrugerB = new PrisDecorator(BrugerA);
 
-            BrugerB.PrintUser();
+            BrugerB.PrintRights();
 
             Console.WriteLine("");
 
@@ -21,7 +21,7 @@ namespace SWD_Decorator
             IUser basicAdmin = new Admin();
             UserDecorator AdminA = new AllRightsDecorator(basicAdmin);
 
-            AdminA.PrintUser();
+            AdminA.PrintRights();
 
 
         }

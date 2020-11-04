@@ -2,6 +2,6 @@
 {
     public interface IUser
     {
-        void PrintUser();
+        void PrintRights();
     }
 }

@@ -9,9 +9,14 @@ namespace Decorator.Library.Decorator
         {
 
         }
-        public override void PrintUser()
+        public override void PrintRights()
         {
-            base.PrintUser();
+            base.PrintRights();
+            PrintPris();
+        }
+
+        public void PrintPris()
+        {
             Console.WriteLine("RETTIGHED: Pris");
         }
     }
