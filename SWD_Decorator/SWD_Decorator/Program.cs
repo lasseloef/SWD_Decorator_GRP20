@@ -1,4 +1,6 @@
 ﻿using System;
+using Decorator.Library.Component;
+using Decorator.Library.Decorator;
 
 namespace SWD_Decorator
 {
@@ -6,7 +8,22 @@ namespace SWD_Decorator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Bruger med delvise rettigheder
+            IUser basicBruger = new Bruger();
+            UserDecorator BrugerA = new AntalDecorator(basicBruger);
+            UserDecorator BrugerB = new PrisDecorator(BrugerA);
+
+            BrugerB.PrintUser();
+
+            Console.WriteLine("");
+
+            //Admin med alle rettigheder
+            IUser basicAdmin = new Admin();
+            UserDecorator AdminA = new AllRightsDecorator(basicAdmin);
+
+            AdminA.PrintUser();
+
+
         }
     }
 }
