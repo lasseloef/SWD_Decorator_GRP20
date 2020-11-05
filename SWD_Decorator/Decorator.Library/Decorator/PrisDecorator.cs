@@ -15,7 +15,7 @@ namespace Decorator.Library.Decorator
         public override void PrintRights()
         {
             //Dette metode kald svarer til PrintRights() metoden i UserDecorator, som printer USER PrintRights() metoden
-            //Altså endten Bruger's eller Admin's
+            //Altså enten Bruger's eller Admin's
             base.PrintRights();
             //Decorators egen print metode
             PrintPris();
